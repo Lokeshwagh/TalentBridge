@@ -1,0 +1,139 @@
+.container {
+  --color: #239ce2;
+  width: 210mm;
+  min-height: 297mm;
+  background: white;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color);
+}
+
+.heading {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--color);
+}
+
+.subHeading {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.3rem;
+  color: var(--color);
+  border-bottom: 2px solid var(--color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.content {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.item {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-weight: 600;
+  margin: 0.3rem 0;
+}
+
+.subTitle {
+  font-weight: 500;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+  font-size: 0.85rem;
+  margin: 0.3rem 0;
+}
+
+.date svg {
+  width: 14px;
+  height: 14px;
+}
+
+.points {
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.point {
+  margin: 0.3rem 0;
+}
+
+.overview {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.numbered {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    width: 100%;
+    min-height: auto;
+    padding: 1rem;
+  }
+}

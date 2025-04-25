@@ -1,0 +1,441 @@
+/* Student Dashboard Container */
+.student-dashboard__container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+/* Sidebar Styles */
+.student-dashboard__sidebar {
+  width: 250px;
+  background: #ffffff;
+  padding: 1.5rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.student-dashboard__sidebar-header {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 1.5rem;
+}
+
+.student-dashboard__sidebar-header h3 {
+  color: #1e293b;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.student-dashboard__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.student-dashboard__nav-btn {
+  padding: 0.75rem 1rem;
+  border: none;
+  background: none;
+  text-align: left;
+  color: #64748b;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.student-dashboard__nav-btn:hover {
+  background-color: #f1f5f9;
+  color: #2563eb;
+}
+
+.student-dashboard__nav-btn.active {
+  background-color: #eff6ff;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.student-dashboard__logout-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-dashboard__logout-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Main Content Styles */
+.student-dashboard__main {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.student-profile__header {
+  display: flex;
+  gap: 52rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  height: 15px;
+}
+
+.student-profile__title {
+  margin: 0;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.student-profile__edit-btn {
+  width: auto;
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-profile__edit-btn:hover {
+  background-color: #3b82f6;
+}
+
+/* Profile Content Styles */
+.student-profile__details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.student-profile__detail-item {
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+.student-profile__detail-label {
+  display: block;
+  color: #64748b;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.student-profile__detail-value {
+  color: #1e293b;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Edit Form Styles */
+.student-profile__edit-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.student-profile__form-group {
+  margin-bottom: 1rem;
+}
+
+.student-profile__form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.student-profile__form-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+}
+
+.student-profile__save-btn {
+  grid-column: span 2;
+  padding: 0.75rem;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-profile__save-btn:hover {
+  background-color: #059669;
+}
+
+/* Applications Section */
+.student-applications__container {
+  padding: 1rem;
+}
+
+.student-applications__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.student-application__card {
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.student-application__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.student-application__job-title {
+  margin: 0 0 0.5rem 0;
+  color: #1e293b;
+  font-size: 1.125rem;
+}
+
+.student-application__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.student-application__company {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.student-application__status {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+}
+
+.student-application__status--pending {
+  color: #f59e0b;
+  background-color: #fef3c7;
+}
+
+.student-application__status--approved {
+  color: #10b981;
+  background-color: #d1fae5;
+}
+
+.student-application__status--rejected {
+  color: #ef4444;
+  background-color: #fee2e2;
+}
+
+.student-application__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.student-application__date {
+  color: #94a3b8;
+  font-size: 0.75rem;
+}
+
+.student-application__details-btn {
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.student-application__details-btn:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-dashboard__container {
+    flex-direction: column;
+  }
+
+  .student-dashboard__sidebar {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .student-dashboard__main {
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .student-profile__details,
+  .student-profile__edit-form {
+    grid-template-columns: 1fr;
+  }
+
+  .student-profile__save-btn {
+    grid-column: span 1;
+  }
+}
+/* Messages Section */
+.student-messages__container {
+  padding: 2rem;
+}
+
+.student-messages__title {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+.student-messages__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.student-message__card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.student-message__card:hover {
+  transform: translateY(-3px);
+}
+
+.student-message__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.student-message__subject {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #34495e;
+}
+
+.student-message__date {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+}
+
+.student-message__content {
+  line-height: 1.6;
+}
+
+.student-message__text {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.student-message__contact {
+  border-top: 1px solid #ecf0f1;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.student-message__contact a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.student-message__contact a:hover {
+  text-decoration: underline;
+}
+
+.student-messages__loading,
+.student-messages__empty {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+/* Message Header */
+.student-message__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.student-message__sender-info {
+  flex-grow: 1;
+}
+
+.student-message__name {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.3rem;
+}
+
+.student-message__email {
+  color: #3498db;
+  font-size: 0.9rem;
+}
+
+.student-message__date {
+  color: #95a5a6;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  margin-left: 1rem;
+}
+
+/* Message Content Sections */
+.student-message__section-label {
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.student-message__original {
+  margin-bottom: 1.5rem;
+}
+
+.student-message__text {
+  color: #2c3e50;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0.5rem;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.student-message__reply {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ecf0f1;
+}
+
+.student-message__reply-text {
+  color: #27ae60;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0.5rem;
+  background: #e8f5e9;
+  border-radius: 4px;
+}

@@ -1,0 +1,405 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4f6fef;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-info h2,
+.profile-info p {
+  margin: 0;
+  color: #fff;
+}
+
+.view-profile {
+  width: 7rem;
+  background-color: #fff;
+  color: #4f6fef;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.dashboard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #fff;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+  margin-bottom: 20px;
+  color: #4f6fef;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+  background-color: #4f6fef;
+  color: #fff;
+}
+
+.content {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.job-table th,
+.job-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.job-table th {
+  background-color: #4f6fef;
+  color: #fff;
+}
+
+/* General container styles */
+.dashboard-grid-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  min-height: auto;
+}
+
+/* Dashboard title */
+.dashboard-title {
+  text-align: center;
+  font-size: 24px;
+  color: #14268c;
+  margin-bottom: 20px;
+}
+
+/* Stats grid for layout */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4rem;
+  justify-items: center;
+}
+
+/* Individual stat box */
+.stat-box {
+  width: 100%;
+  max-width: 250px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat-box h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.stat-box p {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Specific colors for stat boxes */
+.stat-box.blue {
+  background-color: #1e88e5;
+}
+
+.stat-box.orange {
+  background-color: #fb8c00;
+}
+
+.stat-box.green {
+  background-color: #43a047;
+}
+
+.stat-box.red {
+  background-color: #e53935;
+}
+
+.stat-box.purple {
+  background-color: #8e24aa;
+}
+
+.stat-box.teal {
+  background-color: #00897b;
+}
+.view-button {
+  background-color: rgb(89, 185, 236);
+  border: none;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.remove-button {
+  background-color: red;
+  border: none;
+  padding: 5px 10px;
+  color: white;
+  cursor: pointer;
+}
+.mainbutton {
+  width: auto;
+  margin-bottom: 1rem;
+  position: absolute;
+  right: 3rem;
+  top: 215px;
+}
+/* Admin-Actions */
+.admin-actions {
+  display: flex;
+  gap: 2rem;
+}
+.admin-actions-btn {
+  width: auto;
+  background-color: #f0f4ff;
+  color: #14268c;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+.admin-actions-btn:hover {
+  color: #f0f4ff;
+  background-color: #4f6fef;
+  border: 1px solid #f0f4ff;
+}
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e0e0e0;
+}
+
+.profile-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2d3436;
+}
+
+.profile-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #636e72;
+}
+
+/* Compact Actions */
+.compact-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  position: absolute;
+  right: 1.5rem;
+  top: 145px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  top: -17px;
+}
+
+.action-btn:hover {
+  background: #357abd;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+}
+
+.dropdown-container:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background: none;
+  color: black;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background: #4a90e2;
+}
+
+.item-icon {
+  font-size: 1.2rem;
+}
+
+/* Toolbar Styles */
+.centre-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #4a90e2;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  width: 30rem;
+  height: 3rem;
+}
+
+.toolbar-btn {
+  position: relative;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  margin: 0px;
+}
+
+.toolbar-btn:hover {
+  background: #84b3e9;
+}
+
+.profile-btn {
+  width: 4rem;
+  height: 4rem;
+  background: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border-radius: 50px;
+}
+
+.profile-btn:hover {
+  background: #357abd;
+}
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: rgb(122, 122, 122);
+  color: #000000;
+  text-align: center;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 3.5rem;
+  right: -20px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+}
+.dashboard-heading {
+  position: relative;
+  left: -122px;
+}

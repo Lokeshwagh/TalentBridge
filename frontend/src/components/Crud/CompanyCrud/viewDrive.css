@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif; /* Modern font for a clean look */
+  background: linear-gradient(
+    120deg,
+    #f3f8ff,
+    #dcecff
+  ); /* Gradient background */
+}
+
+/* Main Container */
+.view-drive-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 24px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+.view-drive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e6efff;
+  padding-bottom: 10px;
+}
+
+.view-drive-title {
+  color: #1e3a8a; /* Dark Blue */
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.view-drive-close {
+  color: #000000;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.3s, color 0.3s;
+  width: auto;
+  height: 40px;
+  background-color: #ccc;
+  border: 2px solid;
+}
+
+.view-drive-close:hover {
+  color: #ff3333;
+  transform: scale(1.2);
+}
+
+/* Details Section */
+.view-drive-details {
+  background-color: #f9fcff; /* Light Blue Section */
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.6;
+}
+
+.view-drive-item {
+  margin: 14px 0;
+  font-size: 1rem;
+  color: #444; /* Neutral text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+  padding: 8px 0;
+}
+
+.view-drive-label {
+  color: #1e40af; /* Darker Blue for Labels */
+  font-weight: bold;
+}
+
+.view-drive-item:last-child {
+  border-bottom: none; /* Remove border for the last item */
+}
+
+.view-drive-value {
+  color: #222;
+  font-weight: 500;
+  max-width: 60%;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .view-drive-container {
+    padding: 16px;
+  }
+
+  .view-drive-title {
+    font-size: 1.5rem;
+  }
+
+  .view-drive-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .view-drive-value {
+    max-width: 100%;
+    text-align: left;
+    margin-top: 4px;
+  }
+}

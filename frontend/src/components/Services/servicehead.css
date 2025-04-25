@@ -1,0 +1,60 @@
+/* Services.css */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+
+  .breadcrumb-section {
+    position: relative;
+    margin-top: 40px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .breadcrumb-image {
+    width: 100%; /* Makes it fully responsive */
+    object-fit: cover; /* Ensures the image maintains aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for a polished look */
+  }
+  
+  .breadcrumb-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px; /* Added horizontal padding for better readability */
+    border-radius: 12px; /* Slightly increased border radius for a modern look */
+    color: #fff;
+    text-align: center;
+    width: 80%; /* Adjusts overlay width to fit within most screen sizes */
+    max-width: 600px; /* Prevents the overlay from becoming too large */
+  }
+  
+  .breadcrumb-title {
+    font-size: 2.5rem; /* Slightly larger font size for emphasis */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .breadcrumb-subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+    line-height: 1.5; /* Improves readability for multiline subtitles */
+  }
+  
+  .breadcrumb-photo {
+    width: 100%;
+    height: auto;
+    max-height: 60vh; /* Limits the height to maintain responsiveness */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Matches the breadcrumb image's shadow */
+  }
+  .breadcrumb-maintitle {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  

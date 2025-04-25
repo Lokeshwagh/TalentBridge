@@ -1,0 +1,29 @@
+.container {
+  margin-right: 2rem;
+}
+
+.templateList {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.templateButton {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e2e8f0;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.templateButton:hover {
+  border-color: #239ce2;
+  color: #239ce2;
+}
+
+.templateButton.active {
+  background-color: #239ce2;
+  color: white;
+  border-color: #239ce2;
+}

@@ -1,0 +1,103 @@
+.references-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.references-hero {
+  /* background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); */
+  color: white;
+  padding: 4rem 2rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.references-hero:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 255, 0.15);
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Services Overview */
+.services-overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.service-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 255, 0.15);
+}
+
+.service-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: #007bff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: #555;
+  font-size: 1rem;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-overview {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+}
+
+/* Style for the Visit Services button */
+.visit-services-button {
+  width: auto;
+  background-color: #b04fc4;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.visit-services-button:hover {
+  background-color: #8a3b9e;
+}

@@ -1,0 +1,181 @@
+/* Services Container */
+.services-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  background: #f4f7fe;
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-main-title {
+  font-size: 2rem;
+  color: #1a1a1a;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* AI Service Card */
+.ai-service-card {
+  background: linear-gradient(135deg, #eef2ff 0%, #d9e2ff 100%);
+  border: none;
+}
+
+/* Service Icon */
+.service-icon {
+  font-size: 2.5rem;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Title */
+.service-title {
+  font-size: 1.4rem;
+  color: #0056b3;
+  font-weight: 600;
+}
+
+/* Service Description */
+.service-description {
+  color: #555;
+  font-size: 0.95rem;
+  max-width: 90%;
+  line-height: 1.5;
+}
+
+/* Service Button */
+.service-button {
+  padding: 0.6rem 1.5rem;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: none;
+  display: inline-block;
+}
+
+.service-button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-button {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-button {
+    width: 100%;
+  }
+
+  .service-description {
+    font-size: 0.85rem;
+  }
+}
+/* Modified AI Integration Section */
+.ai-integration-section .services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+}
+
+.ai-integration-section .service-card {
+  flex: 0 1 400px; /* Don't grow, can shrink, start at 400px */
+  min-width: 320px; /* Minimum width before wrapping */
+  max-width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Career Services remains grid-based */
+.career-services-section .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+/* Existing styles remain unchanged below this line */
+.services-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: "Inter", sans-serif;
+  background: #f4f7fe;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service-icon-container {
+  font-size: 3rem;
+}

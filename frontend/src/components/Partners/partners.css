@@ -1,0 +1,43 @@
+.marqueeDiv {
+  background-color: #dee9ff;
+  padding: 20px 0;
+}
+
+.partnersSection {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.partnersHeader {
+  text-transform: uppercase;
+  color: black;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.partnersSubText {
+  color: #747474;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: -10px;
+}
+
+.allImages,
+.allImages2 {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.imgPartner,
+.imgPartner2 {
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.imgPartner:hover,
+.imgPartner2:hover {
+  transform: scale(1.1);
+}

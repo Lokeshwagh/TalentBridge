@@ -1,0 +1,58 @@
+.view-student-container {
+  max-width: 600px;
+  margin: 40px auto; /* Added margin for spacing */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  position: relative; /* For the cancel button positioning */
+}
+
+.view-student-header {
+  text-align: center;
+  color: #1e3a8a; /* Dark blue */
+  margin-bottom: 20px;
+}
+
+.view-student-details p {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #eff6ff; /* Light blue */
+  border: 1px solid #93c5fd; /* Blue border */
+  border-radius: 5px;
+}
+
+.view-student-details strong {
+  color: #1e40af; /* Deep blue */
+}
+
+.cancel-button {
+  position: absolute;
+    right: 10px;
+    top: 28px;
+    background-color: #a3a3a3;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    width: auto;
+    height: 42px;
+    text-align: center;
+    line-height: 28px;
+    transition: all 0.3sease;
+}
+
+.cancel-button:hover {
+  background-color: #dc2626; /* Darker red on hover */
+}
+
+.loading,
+.error {
+  text-align: center;
+  font-size: 18px;
+  color: #1e3a8a;
+  margin-top: 50px;
+}
