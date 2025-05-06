@@ -103,7 +103,7 @@ const Header = () => {
                 </div>
               </div>
 
-              <div className="auth-option admin-option">
+              {/* <div className="auth-option admin-option">
                 <img src={Admin} alt="Admin" />
                 <h3>TPO Access</h3>
                 <div className="auth-buttons">
@@ -114,7 +114,7 @@ const Header = () => {
                     Sign Up
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
